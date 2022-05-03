@@ -7,20 +7,21 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Sidebar from "../../assets/img/sidebar.png";
 import Ecommerce from "../../assets/img/ecommerce.png";
-import MusicApp from "../../assets/img//musicapp.png";
+import MusicApp from "../../assets/img/musicapp.png";
 import HOC from "../../assets/img/hoc.png";
+import loginusa1 from "../../assets/img/portfolio/6/4.png"
 
 const Portofolio = () => {
   return (
     <div className="portofolio" id="portofolio">
       {/* Heading */}
-      <span>Recent Projects</span>
-      <span>Portofolio</span>
+      <span>Project Terbaru</span>
+      <span>By Loginusa</span>
 
       {/* slider */}
       <Swiper
         spaceBetween={5}
-        slidesPerView={3}
+        slidesPerView={4}
         grabCursor={true}
         className="portofolio-slider"
       >
@@ -35,6 +36,9 @@ const Portofolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={HOC} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={loginusa1} alt="" />
         </SwiperSlide>
       </Swiper>
 

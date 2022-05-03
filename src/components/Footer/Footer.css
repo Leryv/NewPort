@@ -1,7 +1,7 @@
 .footer{
     display: flex;
     align-items: center;
-    margin: -0.5rem -3.5rem; /* Untuk mengatur Ukuran footer dari kanan ke kiri*/
+    margin: -0.5rem -10rem; /* Untuk mengatur Ukuran footer dari kanan ke kiri*/
     position: relative;
     margin-top: -7rem;
 }
@@ -13,12 +13,18 @@
     align-items: center; /*Mengatur item dlm colom*/
     flex-direction: column; /*mengatur tiap tag menjadi 1 kolom*/
     width: 100%;
-    margin-top: 4rem;
-    gap: 4rem; /*jarak antara span dengan img*/
+    margin-top: 8rem;
+    gap: 3rem; /*jarak antara span dengan img*/
     color:white;
 }
 
 .f-icons{
     display: flex;
     gap: 2rem; /*mengatur jarak antara kiri dan kanan tiap img*/
+}
+
+@media screen and (max-width:576px) {
+.f-content{
+    transform: scale(0.8);
+}
 }

@@ -7,41 +7,45 @@ import Amazon from "../../assets/img/amazon.png";
 import Shopify from "../../assets/img/Shopify.png";
 import Facebook from "../../assets/img/Facebook.png";
 
+import Enesis from "../../assets/logo/Untitled design aja.png";
+import Pln from "../../assets/logo/Logo_PLN.png";
+import Taspen from "../../assets/logo/kisspng-pt-taspen-indonesia-logo-business-id-5ac7f78b70f6a4.1538982615230544754627.png";
+import Chemico from "../../assets/logo/Untitled design n.png";
+import PG from "../../assets/logo/PG2.png";
+
 const Works = () => {
   return (
     <div className="works" id="works">
-      <div className="awesome">
-        <span>Works for all These</span>
-        <span>Brand & Clients</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
-          <br />
-          ispum is simpley dummy text of printing
-          <br />
-          ispum is simpley dummy text of printing
-        </spane>
-        <button className="button s-button">Download CV</button>
-        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+      {/* Sisi Kiri */}
+      <div className="w-left">
+        <div className="awesome">
+          <span>Kerja Sama</span>
+          <span>Brand & Clients</span>
+          <span>
+            Kami Pernah Bekerja dengan beberapa perusahaan ternama seperti
+            perusahaan berikut
+          </span>
+          {/* <button className="button s-button">Download CV</button> */}
+          <div className="blur s-blur1" style={{ background: "#e7d1f5" }}></div>
+        </div>
       </div>
       {/* Sisi Kanan */}
       <div className="w-right">
         <div className="w-mainCircle">
           <div className="w-secCircle">
-              <img src={Upwork} alt="" />
+            <img src={Pln} alt="" />
           </div>
           <div className="w-secCircle">
-              <img src={Fiver} alt="" />
+            <img src={Taspen} alt="" />
           </div>
           <div className="w-secCircle">
-              <img src={Amazon} alt="" />
+            <img src={Enesis} alt="" />
           </div>
           <div className="w-secCircle">
-              <img src={Shopify} alt="" />
+            <img src={Chemico} alt="" />
           </div>
           <div className="w-secCircle">
-              <img src={Facebook} alt="" />
+            <img src={PG} alt="" />
           </div>
         </div>
         {/* Background Circles */}

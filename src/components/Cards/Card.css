@@ -19,7 +19,7 @@
   font-size: 16px;
 }
 .card > img {
-  transform: scale(0.6);
+  transform: scale(0.5);
   margin-bottom: -2rem;
 }
 
@@ -31,6 +31,7 @@
   padding: 10px;
   font-size: 16px;
   color: #5290fd;
+  background-color: var(--orangeCard);
 }
 
 
@@ -39,7 +40,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1200pxx){
   .card{
     width: auto;
   }

@@ -12,66 +12,77 @@ import Crown from "../../assets/img/crown.png";
 import GlassEmo from "../../assets/img/glassesimoji.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { motion } from "framer-motion";
+import loginusa from "../../assets/logo/Facebook Post 940x788 px (4).png"
 
 const Intro = () => {
   const transition = { duration: 2, type: "spring" };
 
   return (
     <div className="Intro">
+
+      {/* Sisi Kiri */}
       <div className="i-left">
         <div className="i-name">
-          <span>Hai! Nama Saya </span>
-          <span>Andika Ibnu Mubarok</span>
+          <span>Loginusa </span>
+          <span>Software House</span>
           <span>
-            Pelajar yang menguasai beberapa teknik front-end Developert , dan
-            telah membuat beberapa project javaScript dengan React dan
-            menggunakan php dengan laravel
+            Kemampuan dan pengalaman Loginusa Automation
+            mendevelop/mengintegrasikan multi Protocol, di harapkan dapat sesuai
+            dengan kebutuhan perusahaan yang ingin mengintegrasikan dengan
+            eksisting System dengan System Terbaru.
           </span>
         </div>
-        <button className="button i-button"> Hire Me</button>
         <div className="i-icons">
           <img src={Github} alt="" />
           <img src={LinkedIn} alt="" />
           <img src={Instagram} alt="" />
         </div>
       </div>
+
+      {/* Sisi Kanan */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={Boy} alt="" />
+        <img src={loginusa} alt="" />
+
+        {/* Emoji Kacamata */}
         <motion.img
-          initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" }}
+          initial={{ left: "-25%" }}
+          whileInView={{ left: "-10%" }}
           transition={transition}
           src={GlassEmo}
+          className="floating-div"
           alt=""
         />
-        <motion.div 
-        initial={{top:"-4%", left:"74%"}}
-        whileInView={{left:"68%"}}
-        transition={transition}
-        className="floating-div"
+
+        {/* Card Web Developer */}
+        <motion.div
+          initial={{ top:"-4%",left: "70%" }}
+          whileInView={{ top:"-4%",left: "65%" }}
+          transition={transition}
+          className="floating-div"
         >
           <FloatingDiv image={Crown} txt1="Web" txt2="Developer" />
         </motion.div>
 
-        <motion.div initial={{top:"18rem" , left:"9rem"}}
-        whileInView={{left:"0rem"}}
-        transition={transition}
-        className="floating-div">
+        {/* Card Best Design Award */}
+        <motion.div
+          initial={{  top:"54%",left: "-25%" }}
+          whileInView={{ top:"54%", left: "5%" }}
+          transition={transition}
+          className="floating-div"
+        >
           <FloatingDiv image={Thumbup} txt1="Best Design" txt2="Award" />
         </motion.div>
 
-        {/* blur div */}
-        <div className="blur" style={{ background: "rgb(238,210,255)" }}></div>
+        {/* Blur div */}
+        <div className="blur1" style={{ background: "rgb(238 210 255)" }} ></div>
         <div
-          className="blur"
+          className="blur2"
           style={{
             background: "#C1F5FF",
-            top: "17rem",
+            top: "12rem",
             width: "21rem",
             height: "11rem",
-            left: "-9rem",
+            left: "-5rem",
           }}
         ></div>
       </div>

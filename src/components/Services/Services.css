@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: start; /*Tambahan*/
 }
 
 .awesome > :nth-child(1) {
@@ -21,15 +22,15 @@
 
 .awesome > :nth-child(2) {
   color: var(--orange);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .awesome > :nth-child(3) {
   color: var(--gray);
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 13px;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .s-button {
@@ -46,8 +47,22 @@
   position: absolute;
 }
 
-/* blur */
+/*Posisi Card*/
+.Card1 {
+  left: 14rem;
+}
 
+.Card2 {
+  top: 12rem;
+  left: -4rem;
+}
+
+.Card3{
+  top: 19rem;
+  left: 14rem;
+}
+
+/* blur */
 .s-blur1 {
   top: 13rem;
   left: -18rem;
@@ -58,22 +73,31 @@
   top: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .services {
     margin-top: 0;
     flex-direction: column;
     gap: 5rem;
-    height: 66rem;
+    height: 57rem;
     padding: 0;
+  }
+  .awesome > span:nth-child(3) {
+    width: 100%;
+  }
+  .awesome > span:nth-child(1) {
+    font-size: 10vw;
+  }
+  .awesome > span:nth-child(2) {
+    font-size: 10vw;
   }
 
   .cards {
     display: flex;
     flex-direction: column;
     gap: 17rem;
+    transform: scale(0.8);
   }
   .cards > * {
     position: static;
   }
 }
-

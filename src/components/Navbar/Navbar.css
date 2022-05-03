@@ -1,14 +1,15 @@
-.n-wrapper {
+/* .n-wrapper {
   height: 10vh;
   display: flex;
   justify-content: space-between;
 }
 
 .n-left {
-  flex: 1;
+  flex: 5;
   align-items: center;
   display: flex;
   gap: 2rem;
+  justify-content: start;
 }
 
 .n-name {
@@ -16,14 +17,15 @@
   font-weight: bold;
 }
 .n-right {
-  display: flex;
-  flex: 1;
+  flex: 5;
   align-items: center;
+  display: flex;
+  gap: 2rem;
   justify-content: center;
-  font-weight: 400;
 }
 .n-list {
-  flex: 10;
+  font-size: 1.3rem;
+
 }
 
 .n-list > ul {
@@ -39,4 +41,68 @@
 
 .n-button {
   flex: 2;
+  width: 7rem;
+  top: -2rem;
+}
+
+
+@media screen and (max-width: 576px) {
+  .n-wrapper {
+    display: none;
+  }
+} */
+
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 10;
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+.n-list > ul :hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+  width: max-content;
+}
+
+@media screen and (max-width: 576px) {
+  .n-list {
+    display: none;
+  }
+  .n-wrapper{
+    position: static;
+  }
 }

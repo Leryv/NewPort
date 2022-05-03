@@ -15,7 +15,7 @@ const Testimonial = () => {
     {
       img: profilePic1,
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+        "Menurut saya produk yang dihasilkan oleh Loginusa sangat bagus dengan harga yang masuk akal, dan interaksi antar client dengan karyawan disana terkesan ramah dan interactive",
     },
     {
       img: profilePic2,
@@ -37,9 +37,9 @@ const Testimonial = () => {
   return (
     <div className="t-wrapper" id="testimonial">
       <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
+        <span>Tanggapan Client </span>
+        <span>Terhadap </span>
+        <span>Loginusa</span>
       <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
       <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
 
